@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:text="商品名称："/>
+
+        <EditText
+            android:id="@+id/editSetCommodityName"
+            android:background="@null"
+            style="?android:attr/textViewStyle"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:text="商品原价（元）："/>
+
+        <EditText
+            android:id="@+id/editSetCommodityOriginalPrice"
+            android:background="@null"
+            style="?android:attr/textViewStyle"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:text="商品现价（元）："/>
+
+        <EditText
+            android:id="@+id/editSetCommodityPrice"
+            android:background="@null"
+            style="?android:attr/textViewStyle"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:text="所需碳积分："/>
+
+        <EditText
+            android:id="@+id/editSetCommodityCreditsNeed"
+            android:background="@null"
+            style="?android:attr/textViewStyle"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:text="剩余数量："/>
+
+        <EditText
+            android:id="@+id/editSetCommodityRemaining"
+            android:background="@null"
+            style="?android:attr/textViewStyle"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editSetCommodityIntroduction"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:gravity="left"
+        android:hint="商品介绍："
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:maxLines="5"/>
+
+</LinearLayout>

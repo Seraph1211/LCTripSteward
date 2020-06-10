@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:text="优惠券名称："/>
+
+        <EditText
+            android:id="@+id/editSetCouponName"
+            android:background="@null"
+            style="?android:attr/textViewStyle"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:text="使用门槛："/>
+
+        <EditText
+            android:id="@+id/editSetCouponSill"
+            android:textSize="20sp"
+            android:background="@null"
+            style="?android:attr/textViewStyle"
+            android:gravity="center"
+            android:hint="满多少钱可用"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:text="优惠券价值："/>
+
+        <EditText
+            android:id="@+id/editSetCouponValue"
+            android:textSize="20sp"
+            android:background="@null"
+            style="?android:attr/textViewStyle"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:text="所需碳积分："/>
+
+        <EditText
+            android:id="@+id/editSetCouponCreditsNeed"
+            android:textSize="20sp"
+            android:background="@null"
+            style="?android:attr/textViewStyle"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:text="过期时间："/>
+
+        <TextView
+            android:id="@+id/textSetCouponExpirationTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="点击以设置日期"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="#ffffff"/>
+
+    </LinearLayout>
+
+</LinearLayout>

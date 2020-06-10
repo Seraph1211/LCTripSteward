@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".bottomnavigation.userinfo.merchant.AddGoodsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMerchantAddGoods"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:fitsSystemWindows="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/buttonMerchantAddGoodsBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/arrowhead_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="发布商品"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonMerchantAddGoods"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_button_orange"
+            android:text="发 布"
+            android:textColor="#FFFFFF" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:text="商品种类："/>
+
+                <!--
+                    代码加载下拉数组，各种属性，及其监听
+                    1、是下拉还是弹出框
+                    spinnerMode="dropdown"
+                    spinnerMode="dialog"
+                    2、下拉宽度：默认宽度和spinner差不多，去掉左边的下拉按钮宽度
+                    dropDownWidth="xxdp"
+                    3、下拉背景色
+                    popupBackground="resColor/resMipmap"
+                    4、背景色：会遮住默认右侧的下拉按钮
+                    background="resColor/resMipmap"
+                -->
+                <Spinner
+                    android:id="@+id/spinnerGoodsType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/frameMerchantAddGoods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

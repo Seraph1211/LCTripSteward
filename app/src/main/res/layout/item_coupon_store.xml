@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:background="@drawable/shape_shadow">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F44336"
+                android:gravity="center"
+                android:text="￥"
+                android:paddingBottom="8dp"
+                android:textSize="22sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/textCouponValueStore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textColor="#F44336"
+                android:gravity="center"
+                android:textSize="40sp"
+                app:layout_constraintLeft_toRightOf="@id/text1"
+                app:layout_constraintBottom_toBottomOf="@id/text1"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/textCouponNameStore"
+            android:gravity="center|left"
+            android:textColor="#0A0A0A"
+            android:text="饿了么减满红包"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:id="@+id/textCouponMerchantStore"
+            android:text="·仅限吕小布的小蛋糕店使用"
+            android:gravity="center|left"
+            android:textColor="#505050"
+            android:layout_marginLeft="5dp"
+            android:textSize="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:id="@+id/textCouponExpirationTimeStore"
+            android:text="·2020-10-1过期"
+            android:gravity="center|left"
+            android:textColor="#505050"
+            android:layout_marginLeft="5dp"
+            android:textSize="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:id="@+id/textCouponSillStore"
+            android:text="·满30元可用"
+            android:gravity="center|left"
+            android:textColor="#505050"
+            android:layout_marginLeft="5dp"
+            android:textSize="10dp"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textCouponCostStore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200积分"
+                android:textSize="14sp"
+                android:textColor="@android:color/holo_orange_light"
+                android:layout_marginBottom="6dp"
+                />
+
+            <Button
+                android:id="@+id/buttonExchangeCoupon"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/shape_button_red"
+                android:gravity="center"
+                android:text="立即兑换"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

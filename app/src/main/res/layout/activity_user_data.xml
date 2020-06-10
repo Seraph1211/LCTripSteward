@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".bottomnavigation.userinfo.UserDataActivity">
+
+    
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/arrowhead_left"
+            android:onClick="back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="个人资料"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+        
+    </androidx.appcompat.widget.Toolbar>
+ 
+    <RelativeLayout
+        android:id="@+id/rl_modify_head_portrait"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:text="头像"
+            android:textColor="@color/colorGray1"
+            android:textSize="18sp"
+            android:gravity="center" />
+        
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:orientation="horizontal">
+            
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_head_portrait"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/default_img"/>
+            
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@mipmap/arrowhead_right"
+                android:layout_gravity="center_vertical"/>
+            
+            
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_modify_nickname"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:text="昵称"
+            android:textColor="@color/colorGray1"
+            android:textSize="18sp"
+            android:gravity="center" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="目前还没有设置昵称呢！"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@mipmap/arrowhead_right"
+                android:layout_gravity="center_vertical"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_modify_phone"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:text="手机号"
+            android:textColor="@color/colorGray1"
+            android:textSize="18sp"
+            android:gravity="center" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="user phone number"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@mipmap/arrowhead_right"
+                android:layout_gravity="center_vertical"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_modify_pwd"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:text="密码"
+            android:textColor="@color/colorGray1"
+            android:textSize="18sp"
+            android:gravity="center" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击以修改密码"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@mipmap/arrowhead_right"
+                android:layout_gravity="center_vertical"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+    
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="#ECECEC"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearMerchantInfo"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"></LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#8DDFDDDD"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutMerchantInfoName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:text="商户名"
+                android:textColor="#8D8D8D"
+                android:textSize="18sp"
+                android:paddingLeft="20dp"
+                android:gravity="center|left"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/textMerchantName"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:textSize="18sp"
+                android:layout_height="match_parent"
+                android:text="点击以设置商户名"
+                android:textColor="#8D8D8D"
+                android:gravity="center|right"
+                app:layout_constraintEnd_toStartOf="@id/imageMerchantInfo1"/>
+
+            <ImageView
+                android:id="@+id/imageMerchantInfo1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/jump_to_8d8d8d"
+                android:layout_marginTop="17.5dp"
+                android:layout_marginRight="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#8DDFDDDD"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutMerchantInfoPhoneNum"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:text="联系电话"
+                android:textSize="18sp"
+                android:textColor="#8D8D8D"
+                android:paddingLeft="20dp"
+                android:gravity="center|left"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/textMerchantPhoneNum"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_height="match_parent"
+                android:text="点击以设置联系电话"
+                android:textSize="18sp"
+                android:textColor="#8D8D8D"
+                android:gravity="center|right"
+                app:layout_constraintEnd_toStartOf="@id/imageMerchantInfo2"/>
+
+            <ImageView
+                android:id="@+id/imageMerchantInfo2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/jump_to_8d8d8d"
+                android:layout_marginTop="17.5dp"
+                android:layout_marginRight="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#8DDFDDDD"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutMerchantInfoEmail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:text="电子邮箱"
+                android:textSize="18sp"
+                android:textColor="#8D8D8D"
+                android:paddingLeft="20dp"
+                android:gravity="center|left"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/textMerchantEmail"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_height="match_parent"
+                android:text="点击以设置电子邮箱"
+                android:textSize="18sp"
+                android:textColor="#8D8D8D"
+                android:gravity="center|right"
+                app:layout_constraintEnd_toStartOf="@id/imageMerchantInfo3"/>
+
+            <ImageView
+                android:id="@+id/imageMerchantInfo3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/jump_to_8d8d8d"
+                android:layout_marginTop="17.5dp"
+                android:layout_marginRight="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#8DDFDDDD"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutMerchantInfoAddress"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:text="联系地址"
+                android:textColor="#8D8D8D"
+                android:textSize="18sp"
+                android:paddingLeft="20dp"
+                android:gravity="center|left"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/textMerchantAddress"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_height="match_parent"
+                android:text="点击以设置联系地址"
+                android:textColor="#8D8D8D"
+                android:textSize="18sp"
+                android:gravity="center|right"
+                app:layout_constraintEnd_toStartOf="@id/imageMerchantInfo4"/>
+
+            <ImageView
+                android:id="@+id/imageMerchantInfo4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/jump_to_8d8d8d"
+                android:layout_marginTop="17.5dp"
+                android:layout_marginRight="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#8DDFDDDD"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutMerchantInfoIntroduce"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:text="简介"
+                android:textColor="#8D8D8D"
+                android:textSize="18sp"
+                android:paddingLeft="20dp"
+                android:gravity="center|left"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/textMerchantIntroduce"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_height="match_parent"
+                android:text="点击以设置商家简介"
+                android:textSize="18sp"
+                android:textColor="#8D8D8D"
+                android:gravity="center|right"
+                app:layout_constraintEnd_toStartOf="@id/imageMerchantInfo5"/>
+
+            <ImageView
+                android:id="@+id/imageMerchantInfo5"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/jump_to_8d8d8d"
+                android:layout_marginTop="17.5dp"
+                android:layout_marginRight="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutMerchantInfoPassword"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearMerchantInfo">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="登录密码"
+            android:textSize="18sp"
+            android:textColor="#8D8D8D"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textMerchantPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:gravity="center|right"
+            android:text="点击以设置登录密码"
+            android:textSize="18sp"
+            android:textColor="#8D8D8D"
+            app:layout_constraintEnd_toStartOf="@id/imageMerchantInfo6" />
+
+        <ImageView
+            android:id="@+id/imageMerchantInfo6"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="17.5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/jump_to_8d8d8d"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageMerchantHeadPortrait"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/girl"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMerchantInfo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/buttonMerchantInfoBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/arrowhead_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="个人信息"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
